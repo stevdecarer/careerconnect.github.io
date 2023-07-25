@@ -239,359 +239,38 @@
         <!-- Start -->
         <section class="relative -mt-[42px] md:pb-24 pb-16">
             <div class="container z-1">
-                <div class="d-flex" id="reserve-form">
-                    <div class="md:w-5/6 mx-auto">
-                        <div class="lg:col-span-10">
-                            <div class="bg-white dark:bg-slate-900 border-0 shadow rounded-md p-3">
-                                <form action="#">
-                                    <div class="registration-form text-dark text-start">
-                                        <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 lg:gap-0 gap-6">
-                                            <div class="filter-search-form relative filter-border">
-                                                <i class="uil uil-briefcase-alt icons"></i>
-                                                <input name="name" type="text" id="job-keyword" class="form-input filter-input-box bg-gray-50 dark:bg-slate-800 border-0" placeholder="Search your Keywords">
-                                            </div>
 
-                                            <div class="filter-search-form relative filter-border">
-                                                <i class="uil uil-map-marker icons"></i>
-                                                <select class="form-select" data-trigger name="choices-location" id="choices-location" aria-label="Default select example">
-                                                    <option value="AF">Afghanistan</option>
-                                                    <option value="AZ">Azerbaijan</option>
-                                                    <option value="BS">Bahamas</option>
-                                                    <option value="BH">Bahrain</option>
-                                                    <option value="CA">Canada</option>
-                                                    <option value="CV">Cape Verde</option>
-                                                    <option value="DK">Denmark</option>
-                                                    <option value="DJ">Djibouti</option>
-                                                    <option value="ER">Eritrea</option>
-                                                    <option value="EE">Estonia</option>
-                                                    <option value="GM">Gambia</option>
-                                                </select>
-                                            </div>
-                                        
-                                            <div class="filter-search-form relative filter-border">
-                                                <i class="uil uil-briefcase-alt icons"></i>
-                                                <select class="form-select" data-trigger name="choices-type" id="choices-type" aria-label="Default select example">
-                                                    <option selected="" value="1">Full Time</option>
-                                                    <option value="2">Part Time</option>
-                                                    <option value="3">Freelancer</option>
-                                                    <option value="4">Remote Work</option>
-                                                    <option value="5">Office Work</option>
-                                                </select>
-                                            </div>
+                    <!-- <div class="d-flex" id="reserve-form">
+                        <div class="md:w-5/6 mx-auto">
+                            <div class="lg:col-span-10 mt-8">
+                                <div class="bg-white dark:bg-slate-900 border-0 shadow rounded-md p-3">
+                                    <form action="#">
+                                        <div class="registration-form text-dark text-start">
+                                            <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:gap-0 gap-6">
+                                                <div class="filter-search-form relative filter-border">
+                                                    <i class="uil uil-briefcase-alt icons"></i>
+                                                    <input name="name" type="text" id="job-keyword" class="form-input filter-input-box bg-gray-50 dark:bg-slate-800 border-0" placeholder="Search your Keywords">
+                                                </div>
+    
+                                                <div class="filter-search-form relative filter-border">
+                                                    <i class="uil uil-map-marker icons"></i>
+                                                    <select class="form-select" data-trigger name="choices-location" id="choices-location" aria-label="Default select example">>
+                                                        <option value="US">United States</option>
+                                                        <option value="AU">Australia</option>
+                                                        <option value="CA">Canada</option>
+                                                    </select>
+                                                </div>
+    
+                                                <input type="submit" id="search" name="search" style="height: 60px;" class="btn bg-emerald-600 hover:bg-emerald-700 border-emerald-600 hover:border-emerald-700 text-white searchbtn submit-btn w-100" value="Search"> -->
+                                           <!-- </div>  end grid-->
+                                       <!-- </div  >end container-->
+                                  <!--  </form>
+                                </div>
+                            </div>ed col-->
+                       <!-- </div>
+                    </div>  end grid-->
 
-                                            <input type="submit" id="search" name="search" style="height: 60px;" class="btn bg-emerald-600 hover:bg-emerald-700 border-emerald-600 hover:border-emerald-700 text-white searchbtn submit-btn w-100" value="Search">
-                                        </div><!--end grid-->
-                                    </div><!--end container-->
-                                </form>
-                            </div>
-                        </div><!--ed col-->
-                    </div>
-                </div><!--end grid-->
-            </div><!--end container-->
-
-            <!-- <div class="container mt-10">
-                <div class="grid grid-cols-1 gap-[30px]">
-                    <div class="group relative overflow-hidden md:flex justify-between items-center rounded shadow hover:shadow-md dark:shadow-gray-700 transition-all duration-500 p-5">
-                        <div class="flex items-center">
-                            <div class="w-14 h-14 flex items-center justify-center bg-white dark:bg-slate-900 shadow dark:shadow-gray-700 rounded-md">
-                                <img src="assets/images/company/facebook-logo.png" class="h-8 w-8"  alt="">
-                            </div>
-                            <a href="job-detail-two.html" class="text-lg hover:text-emerald-600 font-semibold transition-all duration-500 ms-3 min-w-[180px]">Web Designer</a>
-                        </div>
-
-                        <div class="md:block flex justify-between md:mt-0 mt-4">
-                            <span class="block"><span class="bg-emerald-600/10 inline-block text-emerald-600 text-xs px-2.5 py-0.5 font-semibold rounded-full">Full Time</span></span>
-                            <span class="block text-slate-400 text-sm md:mt-1 mt-0"><i class="uil uil-clock"></i> 20th Feb 2023</span>
-                        </div>
-
-                        <div class="md:block flex justify-between md:mt-0 mt-2">
-                            <span class="text-slate-400"><i class="uil uil-map-marker"></i> Australia</span>
-                            <span class="block font-semibold md:mt-1 mt-0">$4,000 - $4,500</span>
-                        </div>
-
-                        <div class="md:mt-0 mt-4">
-                            <a href="#" class="btn btn-icon rounded-full bg-emerald-600/5 hover:bg-emerald-600 border-emerald-600/10 hover:border-emerald-600 text-emerald-600 hover:text-white md:relative absolute top-0 end-0 md:m-0 m-3"><i data-feather="bookmark" class="h-4 w-4"></i></a>
-                            <a href="job-apply.html" class="btn rounded-md bg-emerald-600 hover:bg-emerald-700 border-emerald-600 hover:border-emerald-700 text-white md:ms-2 w-full md:w-auto">Apply Now</a>
-                        </div>
-
-                        <span class="w-24 bg-yellow-400 text-white text-center absolute ltr:-rotate-45 rtl:rotate-45 -start-[30px] top-1"><i class="uil uil-star"></i></span>
-                    </div>end content -->
-                    
-                    <!-- <div class="group relative overflow-hidden md:flex justify-between items-center rounded shadow hover:shadow-md dark:shadow-gray-700 transition-all duration-500 p-5">
-                        <div class="flex items-center">
-                            <div class="w-14 h-14 flex items-center justify-center bg-white dark:bg-slate-900 shadow dark:shadow-gray-700 rounded-md">
-                                <img src="assets/images/company/google-logo.png" class="h-8 w-8"  alt="">
-                            </div>
-                            <a href="job-detail-two.html" class="text-lg hover:text-emerald-600 font-semibold transition-all duration-500 ms-3 min-w-[180px]">Marketing Director</a>
-                        </div>
-
-                        <div class="md:block flex justify-between md:mt-0 mt-4">
-                            <span class="block"><span class="bg-emerald-600/10 inline-block text-emerald-600 text-xs px-2.5 py-0.5 font-semibold rounded-full">Part Time</span></span>
-                            <span class="block text-slate-400 text-sm md:mt-1 mt-0"><i class="uil uil-clock"></i> 20th Feb 2023</span>
-                        </div>
-
-                        <div class="md:block flex justify-between md:mt-0 mt-2">
-                            <span class="text-slate-400"><i class="uil uil-map-marker"></i> USA</span>
-                            <span class="block font-semibold md:mt-1 mt-0">$4,000 - $4,500</span>
-                        </div>
-
-                        <div class="md:mt-0 mt-4">
-                            <a href="#" class="btn btn-icon rounded-full bg-emerald-600/5 hover:bg-emerald-600 border-emerald-600/10 hover:border-emerald-600 text-emerald-600 hover:text-white md:relative absolute top-0 end-0 md:m-0 m-3"><i data-feather="bookmark" class="h-4 w-4"></i></a>
-                            <a href="job-apply.html" class="btn rounded-md bg-emerald-600 hover:bg-emerald-700 border-emerald-600 hover:border-emerald-700 text-white md:ms-2 w-full md:w-auto">Apply Now</a>
-                        </div>
-                    </div>end content -->
-                    
-                    <!-- <div class="group relative overflow-hidden md:flex justify-between items-center rounded shadow hover:shadow-md dark:shadow-gray-700 transition-all duration-500 p-5">
-                        <div class="flex items-center">
-                            <div class="w-14 h-14 flex items-center justify-center bg-white dark:bg-slate-900 shadow dark:shadow-gray-700 rounded-md">
-                                <img src="assets/images/company/android.png" class="h-8 w-8"  alt="">
-                            </div>
-                            <a href="job-detail-two.html" class="text-lg hover:text-emerald-600 font-semibold transition-all duration-500 ms-3 min-w-[180px]">App Developer</a>
-                        </div>
-
-                        <div class="md:block flex justify-between md:mt-0 mt-4">
-                            <span class="block"><span class="bg-emerald-600/10 inline-block text-emerald-600 text-xs px-2.5 py-0.5 font-semibold rounded-full">Remote</span></span>
-                            <span class="block text-slate-400 text-sm md:mt-1 mt-0"><i class="uil uil-clock"></i> 20th Feb 2023</span>
-                        </div>
-
-                        <div class="md:block flex justify-between md:mt-0 mt-2">
-                            <span class="text-slate-400"><i class="uil uil-map-marker"></i> China</span>
-                            <span class="block font-semibold md:mt-1 mt-0">$4,000 - $4,500</span>
-                        </div>
-
-                        <div class="md:mt-0 mt-4">
-                            <a href="#" class="btn btn-icon rounded-full bg-emerald-600/5 hover:bg-emerald-600 border-emerald-600/10 hover:border-emerald-600 text-emerald-600 hover:text-white md:relative absolute top-0 end-0 md:m-0 m-3"><i data-feather="bookmark" class="h-4 w-4"></i></a>
-                            <a href="job-apply.html" class="btn rounded-md bg-emerald-600 hover:bg-emerald-700 border-emerald-600 hover:border-emerald-700 text-white md:ms-2 w-full md:w-auto">Apply Now</a>
-                        </div>
-                    </div>end content -->
-                    
-                    <!-- <div class="group relative overflow-hidden md:flex justify-between items-center rounded shadow hover:shadow-md dark:shadow-gray-700 transition-all duration-500 p-5">
-                        <div class="flex items-center">
-                            <div class="w-14 h-14 flex items-center justify-center bg-white dark:bg-slate-900 shadow dark:shadow-gray-700 rounded-md">
-                                <img src="assets/images/company/lenovo-logo.png" class="h-8 w-8"  alt="">
-                            </div>
-                            <a href="job-detail-two.html" class="text-lg hover:text-emerald-600 font-semibold transition-all duration-500 ms-3 min-w-[180px]">Product Designer</a>
-                        </div>
-
-                        <div class="md:block flex justify-between md:mt-0 mt-4">
-                            <span class="block"><span class="bg-emerald-600/10 inline-block text-emerald-600 text-xs px-2.5 py-0.5 font-semibold rounded-full">WFH</span></span>
-                            <span class="block text-slate-400 text-sm md:mt-1 mt-0"><i class="uil uil-clock"></i> 20th Feb 2023</span>
-                        </div>
-
-                        <div class="md:block flex justify-between md:mt-0 mt-2">
-                            <span class="text-slate-400"><i class="uil uil-map-marker"></i> Dubai</span>
-                            <span class="block font-semibold md:mt-1 mt-0">$4,000 - $4,500</span>
-                        </div>
-
-                        <div class="md:mt-0 mt-4">
-                            <a href="#" class="btn btn-icon rounded-full bg-emerald-600/5 hover:bg-emerald-600 border-emerald-600/10 hover:border-emerald-600 text-emerald-600 hover:text-white md:relative absolute top-0 end-0 md:m-0 m-3"><i data-feather="bookmark" class="h-4 w-4"></i></a>
-                            <a href="job-apply.html" class="btn rounded-md bg-emerald-600 hover:bg-emerald-700 border-emerald-600 hover:border-emerald-700 text-white md:ms-2 w-full md:w-auto">Apply Now</a>
-                        </div>
-                    </div>end content -->
-                    
-                    <!-- <div class="group relative overflow-hidden md:flex justify-between items-center rounded shadow hover:shadow-md dark:shadow-gray-700 transition-all duration-500 p-5">
-                        <div class="flex items-center">
-                            <div class="w-14 h-14 flex items-center justify-center bg-white dark:bg-slate-900 shadow dark:shadow-gray-700 rounded-md">
-                                <img src="assets/images/company/spotify.png" class="h-8 w-8"  alt="">
-                            </div>
-                            <a href="job-detail-two.html" class="text-lg hover:text-emerald-600 font-semibold transition-all duration-500 ms-3 min-w-[180px]">C++ Developer</a>
-                        </div>
-
-                        <div class="md:block flex justify-between md:mt-0 mt-4">
-                            <span class="block"><span class="bg-emerald-600/10 inline-block text-emerald-600 text-xs px-2.5 py-0.5 font-semibold rounded-full">Full Time</span></span>
-                            <span class="block text-slate-400 text-sm md:mt-1 mt-0"><i class="uil uil-clock"></i> 20th Feb 2023</span>
-                        </div>
-
-                        <div class="md:block flex justify-between md:mt-0 mt-2">
-                            <span class="text-slate-400"><i class="uil uil-map-marker"></i> India</span>
-                            <span class="block font-semibold md:mt-1 mt-0">$4,000 - $4,500</span>
-                        </div>
-
-                        <div class="md:mt-0 mt-4">
-                            <a href="#" class="btn btn-icon rounded-full bg-emerald-600/5 hover:bg-emerald-600 border-emerald-600/10 hover:border-emerald-600 text-emerald-600 hover:text-white md:relative absolute top-0 end-0 md:m-0 m-3"><i data-feather="bookmark" class="h-4 w-4"></i></a>
-                            <a href="job-apply.html" class="btn rounded-md bg-emerald-600 hover:bg-emerald-700 border-emerald-600 hover:border-emerald-700 text-white md:ms-2 w-full md:w-auto">Apply Now</a>
-                        </div>
-
-                        <span class="w-24 bg-yellow-400 text-white text-center absolute ltr:-rotate-45 rtl:rotate-45 -start-[30px] top-1"><i class="uil uil-star"></i></span>
-                    </div>end content -->
-                    
-                    <!-- <div class="group relative overflow-hidden md:flex justify-between items-center rounded shadow hover:shadow-md dark:shadow-gray-700 transition-all duration-500 p-5">
-                        <div class="flex items-center">
-                            <div class="w-14 h-14 flex items-center justify-center bg-white dark:bg-slate-900 shadow dark:shadow-gray-700 rounded-md">
-                                <img src="assets/images/company/linkedin.png" class="h-8 w-8"  alt="">
-                            </div>
-                            <a href="job-detail-two.html" class="text-lg hover:text-emerald-600 font-semibold transition-all duration-500 ms-3 min-w-[180px]">Php Developer</a>
-                        </div>
-
-                        <div class="md:block flex justify-between md:mt-0 mt-4">
-                            <span class="block"><span class="bg-emerald-600/10 inline-block text-emerald-600 text-xs px-2.5 py-0.5 font-semibold rounded-full">Remote</span></span>
-                            <span class="block text-slate-400 text-sm md:mt-1 mt-0"><i class="uil uil-clock"></i> 20th Feb 2023</span>
-                        </div>
-
-                        <div class="md:block flex justify-between md:mt-0 mt-2">
-                            <span class="text-slate-400"><i class="uil uil-map-marker"></i> Pakistan</span>
-                            <span class="block font-semibold md:mt-1 mt-0">$4,000 - $4,500</span>
-                        </div>
-
-                        <div class="md:mt-0 mt-4">
-                            <a href="#" class="btn btn-icon rounded-full bg-emerald-600/5 hover:bg-emerald-600 border-emerald-600/10 hover:border-emerald-600 text-emerald-600 hover:text-white md:relative absolute top-0 end-0 md:m-0 m-3"><i data-feather="bookmark" class="h-4 w-4"></i></a>
-                            <a href="job-apply.html" class="btn rounded-md bg-emerald-600 hover:bg-emerald-700 border-emerald-600 hover:border-emerald-700 text-white md:ms-2 w-full md:w-auto">Apply Now</a>
-                        </div>
-
-                        <span class="w-24 bg-yellow-400 text-white text-center absolute ltr:-rotate-45 rtl:rotate-45 -start-[30px] top-1"><i class="uil uil-star"></i></span>
-                    </div>end content -->
-
-                    <!-- <div class="group relative overflow-hidden md:flex justify-between items-center rounded shadow hover:shadow-md dark:shadow-gray-700 transition-all duration-500 p-5">
-                        <div class="flex items-center">
-                            <div class="w-14 h-14 flex items-center justify-center bg-white dark:bg-slate-900 shadow dark:shadow-gray-700 rounded-md">
-                                <img src="assets/images/company/circle-logo.png" class="h-8 w-8"  alt="">
-                            </div>
-                            <a href="job-detail-two.html" class="text-lg hover:text-emerald-600 font-semibold transition-all duration-500 ms-3 min-w-[180px]">Web Designer</a>
-                        </div>
-
-                        <div class="md:block flex justify-between md:mt-0 mt-4">
-                            <span class="block"><span class="bg-emerald-600/10 inline-block text-emerald-600 text-xs px-2.5 py-0.5 font-semibold rounded-full">Full Time</span></span>
-                            <span class="block text-slate-400 text-sm md:mt-1 mt-0"><i class="uil uil-clock"></i> 20th Feb 2023</span>
-                        </div>
-
-                        <div class="md:block flex justify-between md:mt-0 mt-2">
-                            <span class="text-slate-400"><i class="uil uil-map-marker"></i> Australia</span>
-                            <span class="block font-semibold md:mt-1 mt-0">$4,000 - $4,500</span>
-                        </div>
-
-                        <div class="md:mt-0 mt-4">
-                            <a href="#" class="btn btn-icon rounded-full bg-emerald-600/5 hover:bg-emerald-600 border-emerald-600/10 hover:border-emerald-600 text-emerald-600 hover:text-white md:relative absolute top-0 end-0 md:m-0 m-3"><i data-feather="bookmark" class="h-4 w-4"></i></a>
-                            <a href="job-apply.html" class="btn rounded-md bg-emerald-600 hover:bg-emerald-700 border-emerald-600 hover:border-emerald-700 text-white md:ms-2 w-full md:w-auto">Apply Now</a>
-                        </div>
-
-                        <span class="w-24 bg-yellow-400 text-white text-center absolute ltr:-rotate-45 rtl:rotate-45 -start-[30px] top-1"><i class="uil uil-star"></i></span>
-                    </div>end content -->
-                    
-                    <!-- <div class="group relative overflow-hidden md:flex justify-between items-center rounded shadow hover:shadow-md dark:shadow-gray-700 transition-all duration-500 p-5">
-                        <div class="flex items-center">
-                            <div class="w-14 h-14 flex items-center justify-center bg-white dark:bg-slate-900 shadow dark:shadow-gray-700 rounded-md">
-                                <img src="assets/images/company/skype.png" class="h-8 w-8"  alt="">
-                            </div>
-                            <a href="job-detail-two.html" class="text-lg hover:text-emerald-600 font-semibold transition-all duration-500 ms-3 min-w-[180px]">Marketing Director</a>
-                        </div>
-
-                        <div class="md:block flex justify-between md:mt-0 mt-4">
-                            <span class="block"><span class="bg-emerald-600/10 inline-block text-emerald-600 text-xs px-2.5 py-0.5 font-semibold rounded-full">Part Time</span></span>
-                            <span class="block text-slate-400 text-sm md:mt-1 mt-0"><i class="uil uil-clock"></i> 20th Feb 2023</span>
-                        </div>
-
-                        <div class="md:block flex justify-between md:mt-0 mt-2">
-                            <span class="text-slate-400"><i class="uil uil-map-marker"></i> USA</span>
-                            <span class="block font-semibold md:mt-1 mt-0">$4,000 - $4,500</span>
-                        </div>
-
-                        <div class="md:mt-0 mt-4">
-                            <a href="#" class="btn btn-icon rounded-full bg-emerald-600/5 hover:bg-emerald-600 border-emerald-600/10 hover:border-emerald-600 text-emerald-600 hover:text-white md:relative absolute top-0 end-0 md:m-0 m-3"><i data-feather="bookmark" class="h-4 w-4"></i></a>
-                            <a href="job-apply.html" class="btn rounded-md bg-emerald-600 hover:bg-emerald-700 border-emerald-600 hover:border-emerald-700 text-white md:ms-2 w-full md:w-auto">Apply Now</a>
-                        </div>
-                    </div>end content -->
-                    
-                    <!-- <div class="group relative overflow-hidden md:flex justify-between items-center rounded shadow hover:shadow-md dark:shadow-gray-700 transition-all duration-500 p-5">
-                        <div class="flex items-center">
-                            <div class="w-14 h-14 flex items-center justify-center bg-white dark:bg-slate-900 shadow dark:shadow-gray-700 rounded-md">
-                                <img src="assets/images/company/snapchat.png" class="h-8 w-8"  alt="">
-                            </div>
-                            <a href="job-detail-two.html" class="text-lg hover:text-emerald-600 font-semibold transition-all duration-500 ms-3 min-w-[180px]">App Developer</a>
-                        </div>
-
-                        <div class="md:block flex justify-between md:mt-0 mt-4">
-                            <span class="block"><span class="bg-emerald-600/10 inline-block text-emerald-600 text-xs px-2.5 py-0.5 font-semibold rounded-full">Remote</span></span>
-                            <span class="block text-slate-400 text-sm md:mt-1 mt-0"><i class="uil uil-clock"></i> 20th Feb 2023</span>
-                        </div>
-
-                        <div class="md:block flex justify-between md:mt-0 mt-2">
-                            <span class="text-slate-400"><i class="uil uil-map-marker"></i> China</span>
-                            <span class="block font-semibold md:mt-1 mt-0">$4,000 - $4,500</span>
-                        </div>
-
-                        <div class="md:mt-0 mt-4">
-                            <a href="#" class="btn btn-icon rounded-full bg-emerald-600/5 hover:bg-emerald-600 border-emerald-600/10 hover:border-emerald-600 text-emerald-600 hover:text-white md:relative absolute top-0 end-0 md:m-0 m-3"><i data-feather="bookmark" class="h-4 w-4"></i></a>
-                            <a href="job-apply.html" class="btn rounded-md bg-emerald-600 hover:bg-emerald-700 border-emerald-600 hover:border-emerald-700 text-white md:ms-2 w-full md:w-auto">Apply Now</a>
-                        </div>
-                    </div>end content -->
-                    
-                    <!-- <div class="group relative overflow-hidden md:flex justify-between items-center rounded shadow hover:shadow-md dark:shadow-gray-700 transition-all duration-500 p-5">
-                        <div class="flex items-center">
-                            <div class="w-14 h-14 flex items-center justify-center bg-white dark:bg-slate-900 shadow dark:shadow-gray-700 rounded-md">
-                                <img src="assets/images/company/shree-logo.png" class="h-8 w-8"  alt="">
-                            </div>
-                            <a href="job-detail-two.html" class="text-lg hover:text-emerald-600 font-semibold transition-all duration-500 ms-3 min-w-[180px]">Product Designer</a>
-                        </div>
-
-                        <div class="md:block flex justify-between md:mt-0 mt-4">
-                            <span class="block"><span class="bg-emerald-600/10 inline-block text-emerald-600 text-xs px-2.5 py-0.5 font-semibold rounded-full">WFH</span></span>
-                            <span class="block text-slate-400 text-sm md:mt-1 mt-0"><i class="uil uil-clock"></i> 20th Feb 2023</span>
-                        </div>
-
-                        <div class="md:block flex justify-between md:mt-0 mt-2">
-                            <span class="text-slate-400"><i class="uil uil-map-marker"></i> Dubai</span>
-                            <span class="block font-semibold md:mt-1 mt-0">$4,000 - $4,500</span>
-                        </div>
-
-                        <div class="md:mt-0 mt-4">
-                            <a href="#" class="btn btn-icon rounded-full bg-emerald-600/5 hover:bg-emerald-600 border-emerald-600/10 hover:border-emerald-600 text-emerald-600 hover:text-white md:relative absolute top-0 end-0 md:m-0 m-3"><i data-feather="bookmark" class="h-4 w-4"></i></a>
-                            <a href="job-apply.html" class="btn rounded-md bg-emerald-600 hover:bg-emerald-700 border-emerald-600 hover:border-emerald-700 text-white md:ms-2 w-full md:w-auto">Apply Now</a>
-                        </div>
-                    </div>end content -->
-                    
-                    <!-- <div class="group relative overflow-hidden md:flex justify-between items-center rounded shadow hover:shadow-md dark:shadow-gray-700 transition-all duration-500 p-5">
-                        <div class="flex items-center">
-                            <div class="w-14 h-14 flex items-center justify-center bg-white dark:bg-slate-900 shadow dark:shadow-gray-700 rounded-md">
-                                <img src="assets/images/company/telegram.png" class="h-8 w-8"  alt="">
-                            </div>
-                            <a href="job-detail-two.html" class="text-lg hover:text-emerald-600 font-semibold transition-all duration-500 ms-3 min-w-[180px]">C++ Developer</a>
-                        </div>
-
-                        <div class="md:block flex justify-between md:mt-0 mt-4">
-                            <span class="block"><span class="bg-emerald-600/10 inline-block text-emerald-600 text-xs px-2.5 py-0.5 font-semibold rounded-full">Full Time</span></span>
-                            <span class="block text-slate-400 text-sm md:mt-1 mt-0"><i class="uil uil-clock"></i> 20th Feb 2023</span>
-                        </div>
-
-                        <div class="md:block flex justify-between md:mt-0 mt-2">
-                            <span class="text-slate-400"><i class="uil uil-map-marker"></i> India</span>
-                            <span class="block font-semibold md:mt-1 mt-0">$4,000 - $4,500</span>
-                        </div>
-
-                        <div class="md:mt-0 mt-4">
-                            <a href="#" class="btn btn-icon rounded-full bg-emerald-600/5 hover:bg-emerald-600 border-emerald-600/10 hover:border-emerald-600 text-emerald-600 hover:text-white md:relative absolute top-0 end-0 md:m-0 m-3"><i data-feather="bookmark" class="h-4 w-4"></i></a>
-                            <a href="job-apply.html" class="btn rounded-md bg-emerald-600 hover:bg-emerald-700 border-emerald-600 hover:border-emerald-700 text-white md:ms-2 w-full md:w-auto">Apply Now</a>
-                        </div>
-
-                        <span class="w-24 bg-yellow-400 text-white text-center absolute ltr:-rotate-45 rtl:rotate-45 -start-[30px] top-1"><i class="uil uil-star"></i></span>
-                    </div>end content -->
-                    
-                    <!-- <div class="group relative overflow-hidden md:flex justify-between items-center rounded shadow hover:shadow-md dark:shadow-gray-700 transition-all duration-500 p-5">
-                        <div class="flex items-center">
-                            <div class="w-14 h-14 flex items-center justify-center bg-white dark:bg-slate-900 shadow dark:shadow-gray-700 rounded-md">
-                                <img src="assets/images/company/whatsapp.png" class="h-8 w-8"  alt="">
-                            </div>
-                            <a href="job-detail-two.html" class="text-lg hover:text-emerald-600 font-semibold transition-all duration-500 ms-3 min-w-[180px]">Php Developer</a>
-                        </div>
-
-                        <div class="md:block flex justify-between md:mt-0 mt-4">
-                            <span class="block"><span class="bg-emerald-600/10 inline-block text-emerald-600 text-xs px-2.5 py-0.5 font-semibold rounded-full">Remote</span></span>
-                            <span class="block text-slate-400 text-sm md:mt-1 mt-0"><i class="uil uil-clock"></i> 20th Feb 2023</span>
-                        </div>
-
-                        <div class="md:block flex justify-between md:mt-0 mt-2">
-                            <span class="text-slate-400"><i class="uil uil-map-marker"></i> Pakistan</span>
-                            <span class="block font-semibold md:mt-1 mt-0">$4,000 - $4,500</span>
-                        </div>
-
-                        <div class="md:mt-0 mt-4">
-                            <a href="#" class="btn btn-icon rounded-full bg-emerald-600/5 hover:bg-emerald-600 border-emerald-600/10 hover:border-emerald-600 text-emerald-600 hover:text-white md:relative absolute top-0 end-0 md:m-0 m-3"><i data-feather="bookmark" class="h-4 w-4"></i></a>
-                            <a href="job-apply.html" class="btn rounded-md bg-emerald-600 hover:bg-emerald-700 border-emerald-600 hover:border-emerald-700 text-white md:ms-2 w-full md:w-auto">Apply Now</a>
-                        </div>
-
-                        <span class="w-24 bg-yellow-400 text-white text-center absolute ltr:-rotate-45 rtl:rotate-45 -start-[30px] top-1"><i class="uil uil-star"></i></span>
-                    </div>end content -->
-
-                    <div class="group relative overflow-hidden md:flex justify-between items-center rounded shadow hover:shadow-md dark:shadow-gray-700 transition-all duration-500 p-5">
+                   <br><br> <div class="group relative overflow-hidden md:flex justify-between items-center rounded shadow hover:shadow-md dark:shadow-gray-700 transition-all duration-500 p-5">
                         <div class="flex items-center">
                             <div class="w-14 h-14 flex items-center justify-center bg-white dark:bg-slate-900 shadow dark:shadow-gray-700 rounded-md">
                                 <!-- <img src="assets/images/company/android.png" class="h-8 w-8"  alt=""> -->
@@ -605,7 +284,7 @@
                         </div>
 
                         <div class="md:block flex justify-between md:mt-0 mt-2">
-                            <span class="text-slate-400"><i class="uil uil-map-marker"></i> Ujnited States</span>
+                            <span class="text-slate-400"><i class="uil uil-map-marker"></i> United States</span>
                             <span class="block font-semibold md:mt-1 mt-0">$215/Task</span>
                         </div>
 
@@ -613,6 +292,7 @@
                             <a href="#" class="btn btn-icon rounded-full bg-emerald-600/5 hover:bg-emerald-600 border-emerald-600/10 hover:border-emerald-600 text-emerald-600 hover:text-white md:relative absolute top-0 end-0 md:m-0 m-3"><i data-feather="bookmark" class="h-4 w-4"></i></a>
                             <a href="Job-SeniorErrand.html" class="btn rounded-md bg-emerald-600 hover:bg-emerald-700 border-emerald-600 hover:border-emerald-700 text-white md:ms-2 w-full md:w-auto">Apply Now</a>
                         </div>
+                        <span class="w-24 bg-yellow-400 text-white text-center absolute ltr:-rotate-45 rtl:rotate-45 -start-[30px] top-1"><i class="uil uil-star"></i></span>
                     </div><!--end content-->
 
                     <div class="group relative overflow-hidden md:flex justify-between items-center rounded shadow hover:shadow-md dark:shadow-gray-700 transition-all duration-500 p-5">
@@ -674,7 +354,7 @@
 
                         <div class="md:block flex justify-between md:mt-0 mt-4">
                             <span class="block"><span class="bg-emerald-600/10 inline-block text-emerald-600 text-xs px-2.5 py-0.5 font-semibold rounded-full">Full Time</span></span>
-                            <span class="block text-slate-400 text-sm md:mt-1 mt-0"><i class="uil uil-clock"></i> Active 1 day ago</span>
+                            <span class="block text-slate-400 text-sm md:mt-1 mt-0"><i class="uil uil-clock"></i> Posted 1 day ago</span>
                         </div>
 
                         <div class="md:block flex justify-between md:mt-0 mt-2">
@@ -698,7 +378,7 @@
 
                         <div class="md:block flex justify-between md:mt-0 mt-4">
                             <span class="block"><span class="bg-emerald-600/10 inline-block text-emerald-600 text-xs px-2.5 py-0.5 font-semibold rounded-full">Full Time</span></span>
-                            <span class="block text-slate-400 text-sm md:mt-1 mt-0"><i class="uil uil-clock"></i> Active 2 days ago</span>
+                            <span class="block text-slate-400 text-sm md:mt-1 mt-0"><i class="uil uil-clock"></i> Posted 2 days ago</span>
                         </div>
 
                         <div class="md:block flex justify-between md:mt-0 mt-2">
@@ -710,6 +390,32 @@
                             <a href="#" class="btn btn-icon rounded-full bg-emerald-600/5 hover:bg-emerald-600 border-emerald-600/10 hover:border-emerald-600 text-emerald-600 hover:text-white md:relative absolute top-0 end-0 md:m-0 m-3"><i data-feather="bookmark" class="h-4 w-4"></i></a>
                             <a href="Job-PayrollManager.html" class="btn rounded-md bg-emerald-600 hover:bg-emerald-700 border-emerald-600 hover:border-emerald-700 text-white md:ms-2 w-full md:w-auto">Apply Now</a>
                         </div>
+                        <span class="w-24 bg-yellow-400 text-white text-center absolute ltr:-rotate-45 rtl:rotate-45 -start-[30px] top-1"><i class="uil uil-star"></i></span>
+                    </div><!--end content-->
+
+                    <div class="group relative overflow-hidden md:flex justify-between items-center rounded shadow hover:shadow-md dark:shadow-gray-700 transition-all duration-500 p-5">
+                        <div class="flex items-center">
+                            <div class="w-14 h-14 flex items-center justify-center bg-white dark:bg-slate-900 shadow dark:shadow-gray-700 rounded-md">
+                                <!-- <img src="assets/images/company/android.png" class="h-8 w-8"  alt=""> -->
+                            </div>
+                            <a href="Job-ProjectManager.html" class="text-lg hover:text-emerald-600 font-semibold transition-all duration-500 ms-3 min-w-[180px]">Project Manager</a>
+                        </div>
+
+                        <div class="md:block flex justify-between md:mt-0 mt-4">
+                            <span class="block"><span class="bg-emerald-600/10 inline-block text-emerald-600 text-xs px-2.5 py-0.5 font-semibold rounded-full">Full Time</span></span>
+                            <span class="block text-slate-400 text-sm md:mt-1 mt-0"><i class="uil uil-clock"></i> Posted 1 days ago</span>
+                        </div>
+
+                        <div class="md:block flex justify-between md:mt-0 mt-2">
+                            <span class="text-slate-400"><i class="uil uil-map-marker"></i> New York</span>
+                            <span class="block font-semibold md:mt-1 mt-0">$80,000 - $100,000 a year</span>
+                        </div>
+
+                        <div class="md:mt-0 mt-4">
+                            <a href="#" class="btn btn-icon rounded-full bg-emerald-600/5 hover:bg-emerald-600 border-emerald-600/10 hover:border-emerald-600 text-emerald-600 hover:text-white md:relative absolute top-0 end-0 md:m-0 m-3"><i data-feather="bookmark" class="h-4 w-4"></i></a>
+                            <a href="Job-ProjectManager.html" class="btn rounded-md bg-emerald-600 hover:bg-emerald-700 border-emerald-600 hover:border-emerald-700 text-white md:ms-2 w-full md:w-auto">Apply Now</a>
+                        </div>
+                        <span class="w-24 bg-yellow-400 text-white text-center absolute ltr:-rotate-45 rtl:rotate-45 -start-[30px] top-1"><i class="uil uil-star"></i></span>
                     </div><!--end content-->
                         
                 </div><!--end grid-->
@@ -731,7 +437,7 @@
                         <div class="mt-4">
                             <a href="#" class="text-lg font-semibold hover:text-emerald-600 transition-all duration-500">24/7 Support</a>
 
-                            <p class="text-slate-400 mt-3 mb-2">Many desktop publishing now use and a search for job.</p>
+                            <p class="text-slate-400 mt-3 mb-2">Career Connect caters to a diverse audience from around the world. Our 24/7 Support ensures that users from different time zones can access assistance without delay..</p>
 
                             <a href="#" class="hover:text-emerald-600 font-medium transition-all duration-500">Read More <i class="uil uil-arrow-right"></i></a>
                         </div>
@@ -745,7 +451,7 @@
                         <div class="mt-4">
                             <a href="#" class="text-lg font-semibold hover:text-emerald-600 transition-all duration-500">Tech & Startup Jobs</a>
 
-                            <p class="text-slate-400 mt-3 mb-2">Many desktop publishing now use and a search for job.</p>
+                            <p class="text-slate-400 mt-3 mb-2">The tech industry extends its influence across various sectors. we offer tech job listings across diverse industries to match your interests and expertise.</p>
 
                             <a href="#" class="hover:text-emerald-600 font-medium transition-all duration-500">Read More <i class="uil uil-arrow-right"></i></a>
                         </div>
@@ -759,7 +465,7 @@
                         <div class="mt-4">
                             <a href="#" class="text-lg font-semibold hover:text-emerald-600 transition-all duration-500">Quick & Easy</a>
 
-                            <p class="text-slate-400 mt-3 mb-2">Many desktop publishing now use and a search for job.</p>
+                            <p class="text-slate-400 mt-3 mb-2">Applying for jobs shouldn't be complicated. With just a few clicks, you can submit your applications directly to employers and stay ahead in the competitive job market.                            </p>
 
                             <a href="#" class="hover:text-emerald-600 font-medium transition-all duration-500">Read More <i class="uil uil-arrow-right"></i></a>
                         </div>
@@ -773,7 +479,7 @@
                         <div class="mt-4">
                             <a href="#" class="text-lg font-semibold hover:text-emerald-600 transition-all duration-500">Save Time</a>
 
-                            <p class="text-slate-400 mt-3 mb-2">Many desktop publishing now use and a search for job.</p>
+                            <p class="text-slate-400 mt-3 mb-2">Say goodbye to tedious application processes. With Career Connect, you can apply to multiple jobs with just a single click, eliminating the need to fill out lengthy application forms repeatedly.</p>
 
                             <a href="#" class="hover:text-emerald-600 font-medium transition-all duration-500">Read More <i class="uil uil-arrow-right"></i></a>
                         </div>
