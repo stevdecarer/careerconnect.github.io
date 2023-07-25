@@ -258,11 +258,13 @@
                                         <div class="mb-4 ltr:text-left rtl:text-right">
                                             <label for="jobcategories" class="font-semibold">Job Categories:</label>
                                             <select name="Job Catergory" class="form-select form-input border border-slate-100 dark:border-slate-800 mt-1">
-                                                <option value="choose">Choose</option>
+                                                <option value="choose" disabled selected hidden >Choose Your Job Catergory</option>
+                                                <option value="Web developer">Business Development Manager</option>
                                                 <option value="Web developer">General Cleaner</option>
                                                 <option value="Web developer">General Manager</option>
                                                 <option value="Web developer">Payroll Manager</option>
                                                 <option value="Web developer">Personal Shopper Service</option>
+                                                <option value="Web developer">Project Manager</option>
                                                 <option value="Web developer">Senior Errand Service</option>
                                                 <option value="UI/UX">UI / UX Desinger</option>
                                                 <option value="Web developer">Web Developer, Frontend</option>
@@ -277,32 +279,53 @@
                                     
                                         <div class="mb-4 ltr:text-left rtl:text-right">
                                             <label class="font-semibold" for="LoginEmail">Email Address:</label>
-                                            <input id="LoginEmail" type="email" name="Email" class="form-input border border-slate-100 dark:border-slate-800 mt-1" placeholder="name@example.com">
+                                            <input id="LoginEmail" type="email" name="Email" class="form-input border border-slate-100 dark:border-slate-800 mt-1" placeholder="name@example.com" required>
                                         </div>
-                                    
                                         <div class="mb-4 ltr:text-left rtl:text-right">
                                             <label class="font-semibold" for="PhoneNo">Phone No.:</label>
-                                            <input id="PhoneNo" type="tel" name="Phone" class="form-input border border-slate-100 dark:border-slate-800 mt-1" placeholder="+1 (234) 567-8901">
+                                            <input id="PhoneNo" type="tel" name="Phone" class="form-input border border-slate-100 dark:border-slate-800 mt-1" placeholder="+1 (234) 567-8901" required>
                                         </div>
+                                        <div class="mb-4 ltr:text-left rtl:text-right">
+                                            <label class="font-semibold" for="PhoneNo">DATE OF BIRTH</label>
+                                            <input id="PhoneNo" type="date" name="DOB" class="form-input border border-slate-100 dark:border-slate-800 mt-1"  required>
+                                        </div>
+                                        <div class="mb-4 ltr:text-left rtl:text-right">
+                                            <label class="font-semibold" for="Address">Residential Address:</label>
+                                            <input id="Adress" type="text" name="Address" class="form-input border border-slate-100 dark:border-slate-800 mt-1" placeholder="Address" required>
+                                        </div>
+                                        <div class="mb-4 ltr:text-left rtl:text-right">
+                                            <label class="font-semibold" for="City">City:</label>
+                                            <input id="City" type="text" name="City"  enterkeyhint="next" class="form-input border border-slate-100 dark:border-slate-800 mt-1" placeholder="City" required>
+                                        </div>
+                                        <div class="mb-4 ltr:text-left rtl:text-right">
+                                            <label class="font-semibold" for="City">ZIP or Postal code</label>
+                                            <input id="postal-code" type="number" name="postal-code" enterkeyhint="next" class="form-input border border-slate-100 dark:border-slate-800 mt-1" placeholder="ZIP" required>
+                                        </div>
+                                
                                     
                                         <div class="mb-4 ltr:text-left rtl:text-right">
                                             <label for="statename" class="font-semibold">Location:</label>
                                             <select name="Country" class="form-select form-input border border-slate-100 dark:border-slate-800 mt-1">
-                                                <option value="US">United States</option>
-                                                <option value="CA">Canada</option>
+                                                <option value="choose" disabled selected hidden >State</option>
                                                 <option value="AU">Australia</option>
+                                                <option value="CA">Canada</option>
+                                                <option value="Ge">Germany</option>
+                                                <option value="Ne">NetherLands</option>
+                                                <option value="Sw">Sweeden</option>
+                                                <option value="Swit">Switzerland</option>
+                                                <option value="US">United States</option>
                                                 <!-- <option value="MC">North Carolina</option>
                                                 <option value="SC">South Carolina</option> -->
                                             </select>
                                         </div>
                                     
                                         <div class="mb-2 ltr:text-left rtl:text-right">
-                                            <label for="comments" class="font-semibold">Coverting Letter:</label>
+                                            <label for="comments" class="font-semibold">Covering Letter:</label>
                                             <textarea name="Additional Message" id="comments" class="form-input border border-slate-100 dark:border-slate-800 mt-1 textarea" placeholder="Message :"></textarea>
                                         </div>
                                     
                                         <div class="mb-4 ltr:text-left rtl:text-right">
-                                            <label class="font-semibold" for="multiple_files">Upload Resume:</label>
+                                            <label class="font-semibold" for="multiple_files">Upload Resume (Optional):</label>
                                             <input name="Cv Upload" class="relative form-input border border-slate-100 dark:border-slate-800 file:h-10 file:-mx-3 file:-my-2 file:cursor-pointer file:rounded-none file:border-0 file:px-3 file:text-neutral-700 bg-clip-padding px-3 py-1.5 file:me-3 mt-1" id="multiple_files" type="file" multiple>
                                         </div>
                                     
