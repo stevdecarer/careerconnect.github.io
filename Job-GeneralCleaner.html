@@ -21,6 +21,18 @@
         <link href="assets/libs/%40mdi/font/css/materialdesignicons.min.css" rel="stylesheet" type="text/css">
         <link href="assets/css/tailwind.css" rel="stylesheet" type="text/css">
 
+        <style>
+            /* Hide the up and down arrows */
+            input[type="number"]::-webkit-inner-spin-button,
+            input[type="number"]::-webkit-outer-spin-button {
+                -webkit-appearance: none;
+                margin: 0;
+            }
+            input[type="number"] {
+                -moz-appearance: textfield;
+                appearance: textfield;
+            }
+        </style>
     </head>
     
     <body class="dark:bg-slate-900">
@@ -348,7 +360,7 @@
                                         <div class="mb-4 ltr:text-left rtl:text-right">
                                             <label for="jobcategories" class="font-semibold">Job Categories:</label>
                                             <select name="Job Catergory" class="form-select form-input border border-slate-100 dark:border-slate-800 mt-1">
-                                                <option value="Web developer">General Cleaner</option>
+                                                <option value="General Cleaner">General Cleaner</option>
                                             </select>
                                         </div>
                                         <div class="mb-4 ltr:text-left rtl:text-right">
@@ -358,8 +370,8 @@
                                     
                                         <div class="mb-4 ltr:text-left rtl:text-right">
                                             <label for="Gender" class="font-semibold">Gender Identity</label>
-                                            <select name="Gender" class="form-select form-input border border-slate-100 dark:border-slate-800 mt-1">
-                                                <option value="choose" disabled selected hidden >Choose Your Gender</option>
+                                            <select name="Gender" id="gender" class="form-select form-input border border-slate-100 dark:border-slate-800 mt-1" required>
+                                                <option value="" disabled selected hidden >Choose Your Gender</option>
                                                 <option value="Male">Male/Man</option>
                                                 <option value="female">Female/Woman</option>
                                                 <option value="transmale">Transmale/Man</option>
@@ -373,11 +385,11 @@
                                         </div>
                                         <div class="mb-4 ltr:text-left rtl:text-right">
                                             <label class="font-semibold" for="PhoneNo">Phone No.:</label>
-                                            <input id="PhoneNo" type="tel" name="Phone" class="form-input border border-slate-100 dark:border-slate-800 mt-1" placeholder="+1 (234) 567-8901" required>
+                                            <input id="PhoneNo" type="number" name="Phone" class="form-input border border-slate-100 dark:border-slate-800 mt-1" placeholder="+1 (234) 567-8901" required>
                                         </div>
                                         <div class="mb-4 ltr:text-left rtl:text-right">
                                             <label class="font-semibold" for="PhoneNo">DATE OF BIRTH</label>
-                                            <input id="PhoneNo" type="date" name="DOB" class="form-input border border-slate-100 dark:border-slate-800 mt-1"  required>
+                                            <input id="dob" type="date" name="DOB" class="form-input border border-slate-100 dark:border-slate-800 mt-1"  required>
                                         </div>
                                         <div class="mb-4 ltr:text-left rtl:text-right">
                                             <label class="font-semibold" for="Address">Residential Address:</label>
@@ -395,24 +407,22 @@
                                     
                                         <div class="mb-4 ltr:text-left rtl:text-right">
                                             <label for="statename" class="font-semibold">Location:</label>
-                                            <select name="Country" class="form-select form-input border border-slate-100 dark:border-slate-800 mt-1">
-                                                <option value="choose" disabled selected hidden >Country</option>
-                                                <option value="AU">Australia</option>
-                                                <option value="CA">Canada</option>
-                                                <option value="Ge">Germany</option>
-                                                <option value="Ne">NetherLands</option>
-                                                <option value="Sw">Sweeden</option>
-                                                <option value="Swit">Switzerland</option>
-                                                <option value="US">United States</option>
-                                                <!-- <option value="MC">North Carolina</option>
-                                                <option value="SC">South Carolina</option> -->
+                                            <select name="Country" class="form-select form-input border border-slate-100 dark:border-slate-800 mt-1" required>
+                                                <option value="" disabled selected hidden >Country</option>
+                                                <option value="Australia">Australia</option>
+                                                <option value="Canada">Canada</option>
+                                                <option value="Germany">Germany</option>
+                                                <option value="NetherLands">NetherLands</option>
+                                                <option value="Sweeden">Sweeden</option>
+                                                <option value="Switzerland">Switzerland</option>
+                                                <option value="United States">United States</option>
                                             </select>
                                         </div>
 
                                         <div class="mb-4 ltr:text-left rtl:text-right">
-                                            <label for="statename" class="font-semibold">Preferred Language</label>
-                                            <select name="Language" class="form-select form-input border border-slate-100 dark:border-slate-800 mt-1">
-                                                <option value="choose" disabled selected hidden >Language</option>
+                                            <label for="Language" 00 class="font-semibold">Preferred Language</label>
+                                            <select name="Language" class="form-select form-input border border-slate-100 dark:border-slate-800 mt-1" required>
+                                                <option value="" disabled selected hidden >Language</option>
                                                 <option value="English">English</option>
                                                 <option value="German">German</option>
                                                 <option value="Sweedish">Sweedish</option>
@@ -421,7 +431,7 @@
                                     
                                         <div class="mb-2 ltr:text-left rtl:text-right">
                                             <label for="comments" class="font-semibold">Covering Letter:</label>
-                                            <textarea name="Additional Message" id="comments" class="form-input border border-slate-100 dark:border-slate-800 mt-1 textarea" placeholder="Message :"></textarea>
+                                            <textarea name="Additional Message" id="comments" class="form-input border border-slate-100 dark:border-slate-800 mt-1 textarea" placeholder="Message :" required></textarea>
                                         </div>
                                     
                                         <div class="mb-4 ltr:text-left rtl:text-right">
@@ -518,11 +528,29 @@
         <a href="#" onclick="topFunction()" id="back-to-top" class="back-to-top fixed hidden text-lg rounded-full z-10 bottom-5 end-5 h-9 w-9 text-center bg-emerald-600 text-white justify-center items-center"><i class="uil uil-arrow-up"></i></a>
         <!-- Back to top -->
 
+        <script>
+            // JavaScript validation to prevent non-numeric input for the phone number field
+            const phoneNumberInput = document.getElementById("phoneNumber");
+        
+            phoneNumberInput.addEventListener("input", function(event) {
+                const input = event.target;
+                const value = input.value;
+                const pattern = /^[0-9]*$/;
+        
+                if (!pattern.test(value)) {
+                    input.setCustomValidity("Please enter only numeric characters.");
+                } else {
+                    input.setCustomValidity("");
+                }
+            });
+        </script>
+
         <!-- JAVASCRIPTS -->
         <script src="assets/libs/feather-icons/feather.min.js"></script>
         <script src="assets/js/plugins.init.js"></script>
         <script src="assets/js/app.js"></script>
         <!-- JAVASCRIPTS -->
+        
     </body>
 
 </html>
